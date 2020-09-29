@@ -21,8 +21,11 @@ public class JavaScriptExecutorFlashElement {
 				driver.get("https://www.facebook.com/");
 				System.out.println("Before" + driver.getTitle());
 				WebElement loginbtn = driver.findElement(By.xpath("//button[@type='submit']"));
+				WebElement Forgetbtn = driver.findElement(By.xpath("//a[contains(text(),'Forgotten password')]"));
 //				WebElement LoginBtn = driver.findElement(By.xpath("//button[@type='submit']")).click();
-				flash(loginbtn,driver);
+//				flash(loginbtn,driver);
+//				alertmessage(driver,"JavaExecutor concept");
+				ForgetBtnClick(Forgetbtn,driver);
 	}
 	
 	public static void flash(WebElement element,WebDriver driver){
@@ -36,11 +39,21 @@ public class JavaScriptExecutorFlashElement {
 		
 	}
 
-	private static void changeColor(String color, WebElement element,
+	public static void changeColor(String color, WebElement element,
 			WebDriver driver) {
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
 		js.executeScript("arguments[0].style.backgroundColor= '"+color+"'", element);
 		
+	}
+	
+	public static void alertmessage(WebDriver driver,String message){
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("alert('"+message+"')");
+	}
+	
+	public static void ForgetBtnClick(WebElement element,WebDriver driver){
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", element);
 	}
 
 }
