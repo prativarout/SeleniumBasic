@@ -24,7 +24,7 @@ public class HeadlessBrowerHTMLUnitDriver {
 		
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.findElement(By.id("email")).sendKeys("prativa.r15792");
-		driver.findElement(By.id("pass")).sendKeys("Prativa@15792");
+		driver.findElement(By.id("pass")).sendKeys("abc");
 //		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'Forgotten password')]")).click();
 		
