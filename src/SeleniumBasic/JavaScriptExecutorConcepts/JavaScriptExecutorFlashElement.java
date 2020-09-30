@@ -21,11 +21,13 @@ public class JavaScriptExecutorFlashElement {
 				driver.get("https://www.facebook.com/");
 				System.out.println("Before" + driver.getTitle());
 				WebElement loginbtn = driver.findElement(By.xpath("//button[@type='submit']"));
-				WebElement Forgetbtn = driver.findElement(By.xpath("//a[contains(text(),'Forgotten password')]"));
+//				WebElement Forgetbtn = driver.findElement(By.xpath("//a[contains(text(),'Forgotten password')]"));
 //				WebElement LoginBtn = driver.findElement(By.xpath("//button[@type='submit']")).click();
-//				flash(loginbtn,driver);
+				flash(loginbtn,driver);
 //				alertmessage(driver,"JavaExecutor concept");
-				ForgetBtnClick(Forgetbtn,driver);
+//				ForgetBtnClick(Forgetbtn,driver);
+				System.out.println(returnPageInnerText(driver));
+				scrollPageDown(driver);
 	}
 	
 	public static void flash(WebElement element,WebDriver driver){
@@ -54,6 +56,18 @@ public class JavaScriptExecutorFlashElement {
 	public static void ForgetBtnClick(WebElement element,WebDriver driver){
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
 		js.executeScript("arguments[0].click();", element);
+	}
+	
+	public static String returnPageInnerText(WebDriver driver){
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		String innertxt = js.executeScript("return document.documentElement.innerText;").toString();
+		return innertxt;
+	}
+	
+	public static void scrollPageDown(WebDriver driver){
+		
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 	}
 
 }
