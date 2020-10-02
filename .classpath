@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="C:/Users/nirbh/Downloads/Selenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="F:/JavaProgram Practice/External Jars/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nirbh/Downloads/Selenium/libs/selenium-htmlunit-driver-2.9.0.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

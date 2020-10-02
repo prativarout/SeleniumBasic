@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13981" started-at="2020-10-02T20:38:50Z" finished-at="2020-10-02T20:39:04Z">
+    <groups>
+      <group name="Login">
+        <method signature="TestNGAssertion.getLoginBtn()[pri:1, instance:TestNGPractice.TestNGAssertion@326de728]" name="getLoginBtn" class="TestNGPractice.TestNGAssertion"/>
+      </group> <!-- Login -->
+    </groups>
+    <test name="Default test" duration-ms="13981" started-at="2020-10-02T20:38:50Z" finished-at="2020-10-02T20:39:04Z">
+      <class name="TestNGPractice.TestNGAssertion">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNGPractice.TestNGAssertion@326de728]" name="setup" is-config="true" duration-ms="12122" started-at="2020-10-03T02:08:50Z" finished-at="2020-10-03T02:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getLoginBtn()[pri:1, instance:TestNGPractice.TestNGAssertion@326de728]" name="getLoginBtn" duration-ms="56" started-at="2020-10-03T02:09:02Z" finished-at="2020-10-03T02:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginBtn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNGPractice.TestNGAssertion@326de728]" name="tearDown" is-config="true" duration-ms="1771" started-at="2020-10-03T02:09:02Z" finished-at="2020-10-03T02:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNGPractice.TestNGAssertion -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
